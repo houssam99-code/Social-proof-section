@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover ;
 }
+
 .main-container {
     height: 100vh;
     width: 100%;
@@ -26,7 +27,7 @@ body {
 
 h1 {
     color: #521E4F;
-    font-size: 44px;
+    font-size: 52px;
     margin-left: 20px;
 }
 .left {
@@ -34,33 +35,37 @@ h1 {
     width: fit-content;
     padding: 30px;
     padding-right: 100px;
-    margin-left: 115px;
+    margin-left: 70px;
     padding-top: 80px;
     display: inline-block;
     height: fit-content;
 }
-pre {
+.paragraph {
     color: #521E4F;
     margin-top: 20px;
+    font-size: 20px;
 }
 .right {
     grid-area: rightt;
     display: inline-block;
     height: fit-content;
     padding-top: 80px;
+  
 }
 .style {
-    display: inline;
+    display: inline-block;
     font-weight: bold;
-    margin-top: 15px;
 }
 .padding {
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 60px 20px 30px;
     background-color: #F7F2F8;
-    width: 350px;
+    width: fit-content;
     border-radius: 10px;
-    padding-left: 30px;
     margin-top: 20px;
+    color: #521E4F;
 }
 .second {
     margin-left: 50px;
@@ -73,7 +78,7 @@ pre {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin: 0 20px 0 65px;
+    margin: 0 20px 0 55px;
 
 }
 .resize {
@@ -86,7 +91,7 @@ pre {
 }
 .card {
     background-color: #521E4F;
-    width: 250px;
+    width: 280px;
     padding: 20px 30px;
     border-radius: 10px;
     height: fit-content;
@@ -128,6 +133,7 @@ pre {
 /* Mobile */
 
 @media (min-width: 320px) and (max-width: 480px) {
+ 
     .main-container {
         display: flex;
         flex-direction: column;
@@ -135,8 +141,9 @@ pre {
     h1 {
         text-align: center;
     }
-    pre{
+    .paragraph{
         text-align: center;
+        width: 100vw;
     }
     .second {
         margin: auto;
@@ -147,17 +154,13 @@ pre {
         margin-top: 20px;
     }
     .left {
+    
         margin: auto;
-        padding-right: 0;
         padding: 0;
 
     }
     .right {
         margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .bottom {
         display: flex;
@@ -191,15 +194,17 @@ pre {
 
 /* Small Screens */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 989px) {
+   
     .main-container {
         display: flex;
         flex-direction: column;
+      
     }
     h1 {
         text-align: center;
     }
-    pre{
+    .paragraph{
         text-align: center;
     }
     .second {
@@ -211,8 +216,8 @@ pre {
         margin-top: 20px;
     }
     .left {
+    
         margin: auto;
-        padding-right: 0;
         padding: 0;
 
     }
@@ -248,10 +253,26 @@ pre {
         background-image: none;
     }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 990px) and (max-width: 1160px) {
 
     .left {
         margin-left: 30px;
+    }
+
+}
+@media (min-width: 1161px) and (max-width: 1200px){
+
+    .left {
+        margin-left: 40px;
+    }
+
+}
+@media (min-width: 1201px) and (max-width: 1300px){
+    p{
+        margin-left: 20px;
+    }
+    .bottom {
+        margin-left: 20px;
     }
 
 }
