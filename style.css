@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan';
+}
+html {
+    background-image: url(bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+}
+body {
+    background-image: url(bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.main-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "leftt leftt leftt leftt leftt rightt rightt rightt rightt rightt"
+    "bottomm bottomm bottomm bottomm bottomm bottomm bottomm bottomm bottomm bottomm"
+}
+
+h1 {
+    color: #521E4F;
+    font-size: 44px;
+    margin-left: 20px;
+}
+.left {
+    grid-area: leftt;
+    width: fit-content;
+    padding: 30px;
+    padding-right: 100px;
+    margin-left: 115px;
+    padding-top: 80px;
+    display: inline-block;
+    height: fit-content;
+}
+pre {
+    color: #521E4F;
+    margin-top: 20px;
+}
+.right {
+    grid-area: rightt;
+    display: inline-block;
+    height: fit-content;
+    padding-top: 80px;
+}
+.style {
+    display: inline;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.padding {
+    padding: 10px;
+    background-color: #F7F2F8;
+    width: 350px;
+    border-radius: 10px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.second {
+    margin-left: 50px;
+}
+.third {
+    margin-left: 100px;
+}
+.bottom {
+    grid-area: bottomm;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 20px 0 65px;
+
+}
+.resize {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.name {
+    color: #fff;
+}
+.card {
+    background-color: #521E4F;
+    width: 250px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.buyer-info {
+    color: #AA5B90;
+}
+.card-bottom p {
+    color: #fff;
+}
+.card-bottom {
+    margin-top: 20px;
+}
+.two {
+    margin-top: 20px;
+}
+.three {
+    margin-top: 40px;
+}
+.card-top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "img name name name name"
+    "img info info info info"
+}
+.image {
+    grid-area: img;
+}
+.name {
+    grid-area: name;
+}
+.buyer-info {
+    grid-area: info;
+}
+
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
+    }
+    pre{
+        text-align: center;
+    }
+    .second {
+        margin: auto;
+        margin-top: 20px;
+    }
+    .third {
+        margin: auto;
+        margin-top: 20px;
+    }
+    .left {
+        margin: auto;
+        padding-right: 0;
+        padding: 0;
+
+    }
+    .right {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .one {
+        margin-top: 40px;
+    }
+    .three {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .padding {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    html {
+        background-image: url(bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    body {
+        background-image: none;
+    }
+}
+
+/* Small Screens */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
+    }
+    pre{
+        text-align: center;
+    }
+    .second {
+        margin: auto;
+        margin-top: 20px;
+    }
+    .third {
+        margin: auto;
+        margin-top: 20px;
+    }
+    .left {
+        margin: auto;
+        padding-right: 0;
+        padding: 0;
+
+    }
+    .right {
+        margin: auto;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .one {
+        margin-top: 40px;
+    }
+    .three {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .padding {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    html {
+        background-image: url(bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    body {
+        background-image: none;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .left {
+        margin-left: 30px;
+    }
+
+}
